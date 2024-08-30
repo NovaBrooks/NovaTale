@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cetxqw4q0f3dc"
+path="res://.godot/imported/my version of fallen down slowed.mp3-bd8d9cf2807488429e9470a1b9ff76f8.mp3str"
+
+[deps]
+
+source_file="res://my version of fallen down slowed.mp3"
+dest_files=["res://.godot/imported/my version of fallen down slowed.mp3-bd8d9cf2807488429e9470a1b9ff76f8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
