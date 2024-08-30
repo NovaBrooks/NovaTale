@@ -15,4 +15,4 @@ func _on_continue_pressed():
 
 
 func _on_start_pressed():
-	get_tree().change_scene_to_file("res://room001.tscn")
+	get_tree().change_scene_to_file("res://Room001.tscn")
