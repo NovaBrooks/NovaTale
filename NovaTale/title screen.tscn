@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://btaqafiafg2k2"]
 
 [ext_resource type="Texture2D" uid="uid://citamonyxorah" path="res://title for game.png" id="1_cp8fa"]
-[ext_resource type="Script" path="res://menustart1.gd" id="1_gyvyb"]
+[ext_resource type="Script" path="res://scripts/menustart1.gd" id="1_gyvyb"]
 [ext_resource type="FontFile" uid="uid://fowdai5cl0bb" path="res://8bitoperator_jve.ttf" id="1_x7g6v"]
 [ext_resource type="Texture2D" uid="uid://bcgyyrphj43ll" path="res://heart-png-pixel-undertale-heart-11563090247eng5fojmna.png" id="2_37kn5"]
 [ext_resource type="AudioStream" uid="uid://djf30e1atj8wo" path="res://NV_OST_Fallen 3.mp3" id="5_qmnhg"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://jjk4h8q8j4ws"]
 
 [ext_resource type="PackedScene" uid="uid://d06gagd8qxfyi" path="res://text_box_test.tscn" id="1_j7ru6"]
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_xexs1"]
+[ext_resource type="Script" path="res://scripts/CharacterBody2D.gd" id="1_xexs1"]
 [ext_resource type="Texture2D" uid="uid://p8g5b0t1f4xx" path="res://player sprite.png" id="2_m607o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_btvkm"]

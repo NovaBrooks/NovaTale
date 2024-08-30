@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://df77d1nsu04sx"]
+[gd_scene load_steps=8 format=4 uid="uid://df77d1nsu04sx"]
 
 [ext_resource type="Texture2D" uid="uid://deij5w67ebqa4" path="res://room 1.png" id="1_c3j2p"]
 [ext_resource type="PackedScene" uid="uid://jjk4h8q8j4ws" path="res://player.tscn" id="2_46j0v"]
+[ext_resource type="PackedScene" uid="uid://d06gagd8qxfyi" path="res://text_box_test.tscn" id="3_8jyka"]
 [ext_resource type="PackedScene" uid="uid://dpa6fckaijbxi" path="res://test_change_scene.tscn" id="3_o5plr"]
+[ext_resource type="PackedScene" uid="uid://b43o37jvy8fog" path="res://test textbox.tscn" id="4_tsi2p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_04voh"]
 texture = ExtResource("1_c3j2p")
@@ -187,6 +189,13 @@ tile_set = SubResource("TileSet_ysukw")
 
 [node name="Player" parent="." instance=ExtResource("2_46j0v")]
 position = Vector2(150, 190)
+
+[node name="text box test" parent="Player" instance=ExtResource("3_8jyka")]
+visible = false
+position = Vector2(-110, 30)
+
+[node name="Area2D" parent="Player" instance=ExtResource("4_tsi2p")]
+position = Vector2(0, -40)
 
 [node name="Area2D" parent="." instance=ExtResource("3_o5plr")]
 position = Vector2(618, 208)

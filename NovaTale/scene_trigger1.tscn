@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d0cr65at4524x"]
 
-[ext_resource type="Script" path="res://SceneTrigger.gd" id="1_k67uc"]
+[ext_resource type="Script" path="res://scripts/SceneTrigger.gd" id="1_k67uc"]
 
 [node name="SceneTrigger1" type="Area2D"]
 script = ExtResource("1_k67uc")
