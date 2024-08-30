@@ -1,8 +1,7 @@
 
 ![title for game](https://github.com/user-attachments/assets/9a08fd52-e73c-4ef7-9fab-7b0189331f9e)
 
-# Currently in version 4.2 of godot 
-I am wortking on fixing that. this message will be fixed when everything is in good 4.3 verison :)
+# Currently in version 4.3ish of godot
 
 # NovaTale
 An undertale fan project called NovaTale made by NovaBrooks
