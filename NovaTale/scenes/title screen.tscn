@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://btaqafiafg2k2"]
+[gd_scene load_steps=6 format=3 uid="uid://btaqafiafg2k2"]
 
-[ext_resource type="Script" path="res://scripts/menustart1.gd" id="1_oxi6v"]
-[ext_resource type="FontFile" uid="uid://fowdai5cl0bb" path="res://fonts/8bitoperator_jve.ttf" id="2_x75vj"]
 [ext_resource type="Texture2D" uid="uid://citamonyxorah" path="res://sprites/title for game.png" id="3_eoa2p"]
 [ext_resource type="Texture2D" uid="uid://bcgyyrphj43ll" path="res://sprites/heart-png-pixel-undertale-heart-11563090247eng5fojmna.png" id="4_ucqv0"]
 [ext_resource type="AudioStream" uid="uid://djf30e1atj8wo" path="res://audio/music/NV_OST_Fallen 3.mp3" id="5_7rp4q"]
+[ext_resource type="PackedScene" uid="uid://dctr8skwl1iau" path="res://scenes/menu.tscn" id="5_od4jt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owyob"]
 bg_color = Color(0, 0, 0, 1)
@@ -14,39 +13,6 @@ border_width_right = 10
 border_width_bottom = 10
 border_color = Color(0.385356, 0.307434, 0.414305, 1)
 border_blend = true
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbdfo"]
-bg_color = Color(0.858824, 0.541176, 0.670588, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.240964, 1.46799e-05, 0.208691, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k34if"]
-bg_color = Color(0.419608, 0.247059, 0.305882, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_color = Color(1, 1, 1, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrbsk"]
-bg_color = Color(0.33463, 0.191189, 0.240249, 1)
-border_width_left = 4
-border_width_top = 1
-border_width_right = 4
-border_color = Color(0.8, 0.8, 0.8, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_348ru"]
-bg_color = Color(0.221858, 0.118929, 0.154225, 1)
-border_width_left = 4
-border_width_top = 1
-border_width_right = 4
-border_color = Color(0.8, 0.8, 0.8, 0)
 
 [node name="Panel" type="Panel"]
 anchors_preset = 15
@@ -61,55 +27,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 640.0
 offset_bottom = 480.0
-script = ExtResource("1_oxi6v")
-
-[node name="Panel" type="Panel" parent="Control"]
-layout_mode = 2
-offset_left = 260.0
-offset_top = 305.0
-offset_right = 420.0
-offset_bottom = 410.0
-scale = Vector2(0.746349, 0.967811)
-theme_override_styles/panel = SubResource("StyleBoxFlat_vbdfo")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel"]
-layout_mode = 0
-offset_right = 160.0
-offset_bottom = 105.0
-theme_override_constants/separation = 0
-
-[node name="Start" type="Button" parent="Control/Panel/VBoxContainer"]
-layout_mode = 2
-mouse_filter = 2
-mouse_force_pass_scroll_events = false
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_x75vj")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_k34if")
-button_mask = 0
-text = "Start"
-
-[node name="Continue" type="Button" parent="Control/Panel/VBoxContainer"]
-layout_mode = 2
-mouse_filter = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_x75vj")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_rrbsk")
-disabled = true
-button_mask = 0
-text = "Continue"
-
-[node name="exit" type="Button" parent="Control/Panel/VBoxContainer"]
-layout_mode = 2
-mouse_filter = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_x75vj")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_348ru")
-button_mask = 0
-text = "Exit
-"
 
 [node name="TitleForGame" type="Sprite2D" parent="Control"]
 position = Vector2(320, 85)
@@ -127,6 +44,5 @@ stream = ExtResource("5_7rp4q")
 pitch_scale = 0.96
 autoplay = true
 
-[connection signal="pressed" from="Control/Panel/VBoxContainer/Start" to="Control" method="_on_start_pressed"]
-[connection signal="pressed" from="Control/Panel/VBoxContainer/Continue" to="Control" method="_on_continue_pressed"]
-[connection signal="pressed" from="Control/Panel/VBoxContainer/exit" to="Control" method="_on_exit_pressed"]
+[node name="Control2" parent="Control" instance=ExtResource("5_od4jt")]
+layout_mode = 1

@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://jjk4h8q8j4ws"]
 
-[ext_resource type="PackedScene" uid="uid://d06gagd8qxfyi" path="res://scenes/text_box_test.tscn" id="1_j7ru6"]
 [ext_resource type="Script" path="res://scripts/CharacterBody2D.gd" id="1_xexs1"]
 [ext_resource type="Texture2D" uid="uid://p8g5b0t1f4xx" path="res://sprites/player sprite.png" id="2_m607o"]
+[ext_resource type="PackedScene" uid="uid://bhpd0v6sjbns0" path="res://scenes/menu_ingame.tscn" id="4_dtf8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_btvkm"]
 size = Vector2(16, 8)
@@ -165,7 +165,6 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D/CollisionShape2D/FriskDownWalk"]
 zoom = Vector2(2, 2)
 
-[node name="text box test" parent="CharacterBody2D/CollisionShape2D/FriskDownWalk/Camera2D" instance=ExtResource("1_j7ru6")]
-visible = false
-position = Vector2(-152, 9)
-scale = Vector2(0.767218, 0.815057)
+[node name="Control" parent="CharacterBody2D/CollisionShape2D/FriskDownWalk/Camera2D" instance=ExtResource("4_dtf8y")]
+
+[connection signal="ready" from="." to="CharacterBody2D" method="_on_player_ready"]
