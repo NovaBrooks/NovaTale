@@ -166,5 +166,11 @@ libraries = {
 zoom = Vector2(2, 2)
 
 [node name="Control" parent="CharacterBody2D/CollisionShape2D/FriskDownWalk/Camera2D" instance=ExtResource("4_dtf8y")]
+visible = false
+z_index = 100
+offset_left = -405.0
+offset_top = -319.0
+offset_right = -405.0
+offset_bottom = -319.0
 
 [connection signal="ready" from="." to="CharacterBody2D" method="_on_player_ready"]

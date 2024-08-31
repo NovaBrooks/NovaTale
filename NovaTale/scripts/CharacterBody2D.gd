@@ -33,14 +33,6 @@ func show_menu_c():
 		if Input.is_action_just_pressed("c_for_cancel"):
 			menu1test1.set_visible(false)
 
-#func show_textbox1():
-#	if textbox_test1.visible == false:
-#		if Input.is_action_just_pressed("ui_accept"):
-#			textbox_test1.set_visible(true)
-#	elif textbox_test1.visible == true:
-#		if Input.is_action_just_pressed("ui_accept"):
-#			textbox_test1.set_visible(false)
-
 func _physics_process(_delta):
 	handleInput()
 	move_and_slide()
