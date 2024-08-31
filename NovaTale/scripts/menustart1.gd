@@ -12,7 +12,5 @@ func _on_continue_pressed():
 	pass #contiunue on a later date
 
 
-
-
 func _on_start_pressed():
-	get_tree().change_scene_to_file("res://Room001.tscn")
+	get_tree().change_scene_to_file("res://scenes/Room001.tscn")

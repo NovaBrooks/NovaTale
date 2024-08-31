@@ -12,9 +12,9 @@ config_version=5
 
 config/name="NovaTale"
 config/version="alpha testing"
-run/main_scene="res://title screen.tscn"
+run/main_scene="res://scenes/title screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://heart-png-pixel-undertale-heart-11563090247eng5fojmna.png"
+config/icon="res://sprites/heart-png-pixel-undertale-heart-11563090247eng5fojmna.png"
 
 [display]
 
