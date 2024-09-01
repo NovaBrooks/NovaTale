@@ -1,10 +1,9 @@
+# NovaTale
+An undertale fan project called NovaTale made by NovaBrooks
 
 ![title for game](https://github.com/user-attachments/assets/9a08fd52-e73c-4ef7-9fab-7b0189331f9e)
 
 # Currently in version 4.3 of godot
-
-# NovaTale
-An undertale fan project called NovaTale made by NovaBrooks
 
 # About the project!
 
