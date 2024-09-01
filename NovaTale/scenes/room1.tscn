@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=4 uid="uid://b7sfspqkbvl8p"]
 
-[ext_resource type="Script" path="res://scenes/room_1.gd" id="1_0n0iq"]
+[ext_resource type="Script" path="res://scripts/room_1.gd" id="1_0n0iq"]
 [ext_resource type="Texture2D" uid="uid://cj8ps3n820qss" path="res://sprites/test tiles.png" id="1_07a5g"]
 [ext_resource type="PackedScene" uid="uid://jjk4h8q8j4ws" path="res://scenes/player.tscn" id="2_dpg6k"]
 [ext_resource type="AudioStream" uid="uid://boyhc3dn5ag5s" path="res://audio/music/mus_ruins.ogg" id="3_j51wm"]

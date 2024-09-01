@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bhpd0v6sjbns0"]
 
-[ext_resource type="Script" path="res://scenes/menu_ingame.gd" id="1_gr7ue"]
+[ext_resource type="Script" path="res://scripts/menu_ingame.gd" id="1_gr7ue"]
 [ext_resource type="FontFile" uid="uid://fowdai5cl0bb" path="res://fonts/8bitoperator_jve.ttf" id="2_qjkas"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whcea"]
